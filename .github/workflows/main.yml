@@ -2,8 +2,8 @@ name: hello-world
 on: push
 jobs:
   my-job:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
       - name: print environment variables 
-        run: set
+        run: Get-Variable
       
