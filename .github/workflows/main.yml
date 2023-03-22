@@ -2,8 +2,8 @@ name: hello-world
 on: push
 jobs:
   my-job:
-    runs-on: windows-latest
+    runs-on: self-hosted
     steps:
       - name: print environment variables 
-        run: Get-Variable
+        run: set
       
